@@ -1,0 +1,35 @@
+---
+import Social from "../components/Social.astro";
+
+const platform = "github";
+const username = "withastro";
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+</style>
+
+<footer>
+  <p>
+    Learn more about my projects on <a
+      href={`https://www.${platform}.com/${username}`}>{platform}</a
+    >!
+  </p>
+  <Social
+    platform='Unicornbook'
+    username='Steve'
+  />
+  <Social
+    platform='Twitter'
+    username='Steve'
+  />
+  <Social
+    platform='Youtube'
+    username='Steve'
+  />
+</footer>
